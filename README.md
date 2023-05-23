@@ -1,3 +1,6 @@
 # Instagram Clone
 
-The goal of this project is to learn React while recreating Instagram
+The goal of this project is to learn React & Typescript while recreating Instagram
+
+
+All icons used in this project are from Google fonts.
