@@ -4,3 +4,6 @@ The goal of this project is to learn React & Typescript while recreating Instagr
 
 
 All icons used in this project are from Google fonts.
+
+## Current status
+The navbar displays as intended
