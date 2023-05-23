@@ -63,7 +63,7 @@ main {
     padding: 5px 0px;
 }
 
-.nav-item, .nav-more {
+.nav-item{
     display: flex;
     padding: 0px 25px 0px 15px;
     font-family: Arial;
@@ -75,12 +75,7 @@ main {
     height: 40%;
 }
 
-.nav-more {
-
-    width: 270px;
-}
-
-.nav-item:hover, .nav-more:hover {
+.nav-item:hover {
     background-color: #1A1A1A;
     
 }
@@ -94,7 +89,7 @@ main {
     justify-content: center;
 }
 
-.nav-item:hover > .navicon, .nav-more:hover > .navicon{
+.nav-item:hover > .navicon{
     transform: scale(0.62);
 }
 

@@ -60,7 +60,7 @@ function NavBar() {
             </li>
             <div className='nav-space'></div>
             <li className='nav-list'>
-                <div className='nav-more'>
+                <div className='nav-item'>
                     <div className='navicon'><MoreIcon/></div>
                     <span className='navtext'>More</span>
                 </div>
