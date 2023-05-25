@@ -8,6 +8,7 @@ import {ReactComponent as NotificationsIcon} from './images/notifications.svg';
 import {ReactComponent as CreateIcon} from './images/create.svg';
 import {ReactComponent as TempI} from './images/temp.svg';
 import {ReactComponent as MoreIcon} from './images/more.svg';
+import { Link } from 'react-router-dom';
 
 // This function is responsible for creating the navbar
 // TODO: insert the SVGs before each word. Profile needs to show the profile picture before it
@@ -17,10 +18,10 @@ function NavBar() {
         <ul className='navbar-nav'>
             <li className='nav-logo'><a className='logo-text' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs'>Instagraham</a></li>
             <li className='nav-list'>
-                <div className='nav-item'>
+                <Link to="/" className='nav-item'>
                     <div className='navicon'><HomeIcon/></div>
                     <span className='navtext'>Home</span>
-                </div>
+                </Link>
             </li>
             <li className='nav-list'>
                 <div className='nav-item'>
@@ -29,10 +30,10 @@ function NavBar() {
                 </div>
             </li>
             <li className='nav-list'>
-                <div className='nav-item'>
+                <Link to="/explore"  className='nav-item'>
                     <div className='navicon'><ExploreIcon/></div>
                     <span className='navtext'>Explore</span>
-                </div>
+                </Link>
             </li>
             <li className='nav-list'>
                 <div className='nav-item'>
