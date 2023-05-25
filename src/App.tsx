@@ -12,22 +12,16 @@ function App() {
   return ( <Routes>
     
     {/* Home Path */}
-    <Route path="/" element={
-      <Home/>
-    }/>
+    <Route path="/" element={ <Home/> }/>
 
     {/* Explore Path */}
-    <Route path="/explore/" element={
-      <Explore/>
-    }/>
+    <Route path="/explore/" element={ <Explore/> }/>
 
     {/* 
       Profile Route 
       The path should be the username/tag of the user
     */}
-    {/*<Route path="" element={
-      <NavBar/>
-    }/>*/}
+    {/*<Route path="" element={ <NavBar/> }/>*/}
 
   </Routes>
 
