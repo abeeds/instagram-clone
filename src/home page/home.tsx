@@ -4,7 +4,7 @@ import "./home.css";
 
 function Home() {
     return (
-        <>
+        <div className="body">
             <NavBar/>
             <div className='home'>
                 <div className='Stories'>
@@ -16,7 +16,7 @@ function Home() {
                     </article>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

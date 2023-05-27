@@ -1,12 +1,17 @@
+.body {
+    display: inline-flex;
+    flex-direction: row;
+}
+
 .home {
-    display: inline-block;
-    margin-left: 338px;
+    /*display: inline-block;*/
+    /*margin-left: 338px;*/
     height: 100vh;
 
 }
 
 .Stories {
-    margin-left: 250px;
+    /*margin-left: 250px;*/
     height: 85px;
     width: 630px;
     margin-top: 50px;
@@ -15,7 +20,7 @@
 
 .posts {
     margin-top: 50px;
-    margin-left: 250px;
+    /*margin-left: 250px;*/
     border: 1px red dotted;
 }
 
