@@ -46,14 +46,29 @@
     float: left;
 }
 
+.post-user-text {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family:"Calibri", sans-serif;
+    margin-right: 5px;
+}
+
 
 .post-username {
     display: flex;
     align-items: center;
     color: inherit;
     text-decoration: none;
-    font-size: 14px;
-    font-family:"Calibri", sans-serif;
+    margin-right: 5px;
+}
+
+.post-username:hover{
+    color: grey;
+}
+
+.post-date {
+    color: grey;
 }
 
 .post-user-pfp {

@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return(<nav className='navbar'>
         <ul className='navbar-nav'>
-            <li className='nav-logo'><a className='logo-text' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs'>Instagraham</a></li>
+            <Link to='/' className='nav-logo'>Instagraham</Link>
             <li className='nav-list'>
                 <Link to="/" className='nav-item'>
                     <div className='navicon'><HomeIcon/></div>

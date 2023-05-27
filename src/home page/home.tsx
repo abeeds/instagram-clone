@@ -9,7 +9,8 @@ import {ReactComponent as TempI} from '../images/temp.svg';
 
 // TODO: need post date, post location (optional) 
 type PostProps = {
-    username: string
+    username: string,
+    location?: string
 };
 
 
@@ -23,7 +24,10 @@ const PostImage = (props: PostProps) => {
                 <div className='post-user-pfp'>
                     <TempI/>
                 </div>
-                <a className='post-username' href="">{props.username}</a>
+                <div className='post-user-text'>
+                    <a className='post-username' href=""><strong>{props.username}</strong></a>
+                    <span className='post-date'>• 11-22-23</span>
+                </div>
             </div>
 
             <div className='post-image'>

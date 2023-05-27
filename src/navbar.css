@@ -25,13 +25,11 @@
     font-size: 25px;
     user-select: none;
     pointer-events: auto;
-}
-
-.logo-text {
     color: inherit;
     text-decoration: none;
     user-select: none;
 }
+
 
 .nav-list {
     padding: 5px 0px;
