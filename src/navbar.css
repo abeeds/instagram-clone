@@ -42,7 +42,7 @@
     text-decoration: none;
     display: flex;
     padding: 0px 25px 0px 10px;
-    font-family: Arial;
+    font-family:"Calibri", sans-serif;
     transition: background-color 0.2s ease;
     border-radius: 7px;
 }
@@ -74,4 +74,5 @@
     align-items: center;
     justify-content: center;
     line-height: 2;
+    font-size: 17px;
 }

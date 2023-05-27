@@ -1,6 +1,47 @@
 import React from 'react';
 import NavBar from '../navbar';
 import "./home.css";
+import {ReactComponent as TempI} from '../images/temp.svg';
+
+/*
+    This function will display an image with the user
+*/
+
+// TODO: need post date, post location (optional) 
+type PostProps = {
+    username: string
+};
+
+
+
+const PostImage = (props: PostProps) => {
+    return(
+        <div className='post'>
+
+            {/* Profile pic on left, info in middle, options on right */}
+            <div className='post-user'>
+                <div className='post-user-pfp'>
+                    <TempI/>
+                </div>
+                <a className='post-username' href="">{props.username}</a>
+            </div>
+
+            <div className='post-image'>
+
+            </div>
+
+            {/* Like, Comment. Save on far right */}
+            <div className='post-options'>
+
+            </div>
+
+            {/* Liked by, then caption, view comments with num of comments, then  */}
+            <div className='post-info'>
+
+            </div>
+        </div>
+    )
+}
 
 function Home() {
     return (
@@ -11,9 +52,7 @@ function Home() {
 
                 </div>
                 <div className='posts'>
-                    <article className='post'>
-
-                    </article>
+                    <PostImage username={'Joey'}/>
                 </div>
             </div>
         </div>

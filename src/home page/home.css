@@ -18,9 +18,49 @@
     border: 1px blue dotted;
 }
 
+
+/*
+    Posts
+*/
 .posts {
     margin-top: 50px;
     /*margin-left: 250px;*/
     border: 1px red dotted;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+.post {
+    border: 1px green dotted;
+    width: 75%;
+}
+
+.post-user {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.post-user {
+    float: left;
+}
+
+
+.post-username {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Calibri", sans-serif;
+}
+
+.post-user-pfp {
+    fill: white;
+    transform: scale(0.8);
+
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 5px 0px;
+}
