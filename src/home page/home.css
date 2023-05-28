@@ -1,13 +1,14 @@
 .body {
     display: inline-flex;
     flex-direction: row;
+    margin-left: 30%;
 }
 
 .home {
     /*display: inline-block;*/
     /*margin-left: 338px;*/
     height: 100vh;
-
+    width: 630px;
 }
 
 .Stories {
@@ -22,6 +23,8 @@
 /*
     Posts
 */
+
+
 .posts {
     margin-top: 50px;
     /*margin-left: 250px;*/
@@ -32,6 +35,8 @@
 }
 
 .post {
+    display: flex;
+    flex-direction: column;
     border: 1px green dotted;
     width: 75%;
 }
@@ -40,6 +45,8 @@
     display: flex;
     flex-direction: row;
     height: 50px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .post-user {
@@ -65,6 +72,19 @@
 
 .post-username:hover{
     color: grey;
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 900px;
+    width: 100%;
+    height: auto;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .post-date {

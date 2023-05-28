@@ -24,6 +24,7 @@ function App() {
       */}
       {/*<Route path="" element={ <NavBar/> }/>*/}
 
+      
   </Routes>
 
 

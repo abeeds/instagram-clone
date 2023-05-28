@@ -10,6 +10,7 @@ import {ReactComponent as TempI} from '../images/temp.svg';
 // TODO: need post date, post location (optional) 
 type PostProps = {
     username: string,
+    image: string,
     location?: string
 };
 
@@ -31,7 +32,7 @@ const PostImage = (props: PostProps) => {
             </div>
 
             <div className='post-image'>
-
+                <img src={props.image}/>
             </div>
 
             {/* Like, Comment. Save on far right */}
@@ -56,7 +57,10 @@ function Home() {
 
                 </div>
                 <div className='posts'>
-                    <PostImage username={'Joey'}/>
+                    <PostImage 
+                        username={'Joey'} 
+                        image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
+                    />
                 </div>
             </div>
         </div>

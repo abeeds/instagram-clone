@@ -3,10 +3,10 @@
     height: 100vh; /* fills 100% of height */
     background-color: black;
     border-right: 1px solid rgb(32, 32, 32);
+    position: fixed;
+    left: 0;
     padding-left: 0.7rem;
     padding-right: 1rem;
-    margin-right: 275px;
-    
 }
 
 .navbar-nav {
