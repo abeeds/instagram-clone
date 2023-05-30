@@ -27,7 +27,6 @@
 
 .posts {
     margin-top: 50px;
-    /*margin-left: 250px;*/
     border: 1px red dotted;
     width: 100%;
     display: flex;
@@ -79,6 +78,7 @@
     max-height: 600px;
     width: 100%;
     height: auto;
+    margin-bottom: 5px;
 }
 
 .post-image img {
@@ -87,10 +87,21 @@
     height: auto;
     display: block;
     overflow: hidden;
+    border-radius: 3px;
 }
 
 .post-date {
     color: grey;
+}
+
+.post-info {
+    font-family:"Calibri", sans-serif;
+    color: rgb(158, 158, 158);
+}
+
+.post-comment-option {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .post-user-pfp {
@@ -100,4 +111,23 @@
     display: flex;
     align-items: center;
     margin: 5px 10px 5px 0px;
+}
+
+.post-options {
+    display: flex;
+    flex-direction: row;
+    fill: white;
+    transform-origin: left;
+}
+
+.post-like, .post-comment,.post-save {
+    transform: scale(0.6);
+}
+
+.post-like:hover, .post-comment:hover,.post-save:hover {
+    fill: gray;
+}
+
+.post-save {
+    margin-left: auto;
 }
