@@ -50,14 +50,15 @@
 
 .post-user {
     float: left;
+    margin-bottom: 5px;
 }
 
 .post-user-text {
     display: flex;
     align-items: center;
     font-size: 15px;
-    font-family:"Calibri", sans-serif;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -71,6 +72,26 @@
 
 .post-username:hover{
     color: grey;
+}
+
+.post-user-pfp {
+    fill: white;
+    transform: scale(0.8);
+
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 5px 0px;
+}
+
+.post-user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:"Calibri", sans-serif;
+}
+
+.user-location {
+    font-size: 13px;
 }
 
 .post-image {
@@ -104,14 +125,7 @@
     margin-bottom: 5px;
 }
 
-.post-user-pfp {
-    fill: white;
-    transform: scale(0.8);
 
-    display: flex;
-    align-items: center;
-    margin: 5px 10px 5px 0px;
-}
 
 .post-options {
     display: flex;

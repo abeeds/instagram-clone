@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from '../navbar.tsx';
 import "./home.css";
 import {ReactComponent as TempI} from '../images/temp.svg';
@@ -11,12 +10,13 @@ import {ReactComponent as Comment} from './post options/comment.svg';
     This function will display an image with the user
 */
 
-// TODO: need post date, post location (optional) 
+// TODO: need to figure out post date 
 type PostProps = {
     username: string,
     image: string,
     location?: string,
     liked_by?: string,
+    description: string,
     like_count: number,
     comment_count: number
 };
@@ -32,10 +32,14 @@ const PostImage = (props: PostProps) => {
                 <div className='post-user-pfp'>
                     <TempI/>
                 </div>
-                <div className='post-user-text'>
-                    <a className='post-username' href=""><strong>{props.username}</strong></a>
-                    <span className='post-date'>• 11-22-23</span>
+                <div className='post-user-info'>
+                    <div className='post-user-text'>
+                        <a className='post-username' href=""><strong>{props.username}</strong></a>
+                        <span className='post-date'>• 11-22-23 </span>
+                    </div>
+                    {props.location && <a className='user-location'>{props.location}</a>}
                 </div>
+                
             </div>
 
             <div className='post-image'>
@@ -82,8 +86,10 @@ function Home() {
                     <PostImage 
                         username={'Joey'} 
                         image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
+                        description='yo'
                         like_count={23}
                         comment_count={13}
+                        location='New York'
                     />
                 </div>
             </div>
