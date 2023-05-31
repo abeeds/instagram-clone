@@ -46,9 +46,6 @@
     height: 50px;
     width: 100%;
     max-width: 100%;
-}
-
-.post-user {
     float: left;
     margin-bottom: 5px;
 }
@@ -120,25 +117,40 @@
     color: rgb(158, 158, 158);
 }
 
-.post-comment-option {
+.post-comment-option, .post-white {
     display: inline-block;
     margin-bottom: 5px;
 }
 
+.post-white {
+    color: white
+}
 
 
-.post-options {
+.post-options, .post-user-options {
     display: flex;
     flex-direction: row;
     fill: white;
-    transform-origin: left;
 }
 
-.post-like, .post-comment,.post-save {
+.post-user-options {
+    margin-left: auto;
+    transform-origin: right !important;
+}
+
+.post-like, .post-comment,.post-save, .post-user-options {
     transform: scale(0.6);
 }
 
-.post-like:hover, .post-comment:hover,.post-save:hover {
+.post-like, .post-comment {
+    transform-origin: left;
+}
+
+.post-save {
+    transform-origin: right;
+}
+
+.post-like:hover, .post-comment:hover,.post-save:hover, .post-user-options:hover {
     fill: gray;
 }
 

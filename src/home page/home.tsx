@@ -4,6 +4,7 @@ import {ReactComponent as TempI} from '../images/temp.svg';
 import {ReactComponent as Like} from './post options/like.svg';
 import {ReactComponent as Save} from './post options/save.svg';
 import {ReactComponent as Comment} from './post options/comment.svg';
+import {ReactComponent as UserOptions} from './post options/user-options.svg';
 
 
 /*
@@ -16,12 +17,14 @@ type PostProps = {
     image: string,
     location?: string,
     liked_by?: string,
-    description: string,
+    description?: string,
     like_count: number,
     comment_count: number
 };
 
-
+function addCommasToNumber(number: number): string {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 const PostImage = (props: PostProps) => {
     return(
@@ -39,7 +42,9 @@ const PostImage = (props: PostProps) => {
                     </div>
                     {props.location && <a className='user-location'>{props.location}</a>}
                 </div>
-                
+                <div className='post-user-options'>
+                    <UserOptions/>
+                </div>
             </div>
 
             <div className='post-image'>
@@ -62,6 +67,32 @@ const PostImage = (props: PostProps) => {
 
             {/* Liked by, then caption, view comments with num of comments, then  */}
             <div className='post-info'>
+                {!props.liked_by ? 
+                    <span className='post-white'>
+                        <strong>{addCommasToNumber(props.like_count)} likes</strong>
+                    </span> : 
+                    <span className='post-white'>
+                        Liked by <strong>{props.liked_by}</strong> {props.like_count > 2 ? (
+                            <>
+                            and <strong>{addCommasToNumber(props.like_count - 1)}</strong> others
+                            </>
+                        ) : props.like_count == 2 ? (
+                            <>
+                            and <strong>{addCommasToNumber(props.like_count - 1)}</strong> other
+                            </>
+                        ) : null}
+                    </span>}
+                
+                <br/>
+                {props.description && 
+                <>
+                    <span className='post-white'>
+                        <strong>{props.username}</strong>
+                        {props.description}
+                    </span>
+                    <br/>
+                </>
+                }
                 
                 {/*Only add view option if there are more than 0 comments*/}
                 {props.comment_count > 0 ? <>
@@ -86,8 +117,9 @@ function Home() {
                     <PostImage 
                         username={'Joey'} 
                         image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
-                        description='yo'
-                        like_count={23}
+                        description=''
+                        liked_by='Steve'
+                        like_count={2}
                         comment_count={13}
                         location='New York'
                     />
