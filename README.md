@@ -7,4 +7,5 @@ All icons used in this project are from Google fonts.
 
 ## Current status
 The navbar displays as intended <br>
-Currently working on the home page (when logged in)
+posts are mostly done on the front end. All thats left is to make the icons change when liked/saved<br>
+
