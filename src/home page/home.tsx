@@ -78,7 +78,7 @@ const PostImage = (props: PostProps) => {
                             </>
                         ) : props.like_count == 2 ? (
                             <>
-                            and <strong>{addCommasToNumber(props.like_count - 1)}</strong> other
+                            and <strong>1</strong> other
                             </>
                         ) : null}
                     </span>}
