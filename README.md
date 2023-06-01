@@ -7,5 +7,10 @@ All icons used in this project are from Google fonts.
 
 ## Current status
 The navbar displays as intended <br>
-posts are mostly done on the front end. All thats left is to make the icons change when liked/saved<br>
+Posts are mostly done on the front end. All thats left is to make the icons change when liked/saved<br>
 
+## TODO
+Installed express and some of the backend components<br>
+Need to setup MongoDB atlas and connect that to the backend<br>
+Need to plan out database model once I finish learning about MongoDB<br>
+Need to connect the backend and frontend
