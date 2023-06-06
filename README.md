@@ -11,6 +11,6 @@ Posts are mostly done on the front end. All thats left is to make the icons chan
 
 ## TODO
 Installed express and some of the backend components<br>
-Need to setup MongoDB atlas and connect that to the backend<br>
+Need to setup MongoDB (locally) connect that to the backend<br>
 Need to plan out database model once I finish learning about MongoDB<br>
 Need to connect the backend and frontend
