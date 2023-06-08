@@ -5,6 +5,14 @@ The goal of this project is to learn React & Typescript while recreating Instagr
 
 All icons used in this project are from Google fonts.
 
+## Database Schemas
+<ul>
+    <li><strong>User</strong>: Username, Email, PhoneNum?, Birthday?, Bio, Gender?, </li>
+    <li><strong>Following</strong>: Follower, Followed</li>
+    <li><strong>Post</strong>: username, location?, date-posted, content, description, like_count=0, comment_count=0,  </li>
+    <li><strong>Story</strong>: </li>
+</ul>
+
 ## Current status
 The navbar displays as intended <br>
 Posts are mostly done on the front end. All thats left is to make the icons change when liked/saved<br>
