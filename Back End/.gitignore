@@ -1,5 +1,7 @@
 # dependencies
 /node_modules
+node_modules
+node_modules/
 
 # logs
 npm-debug.log*
@@ -13,7 +15,6 @@ pids
 *.log
 
 # Dependency directories
-node_modules/
 jspm_packages/
 
 # Yarn Integrity file
