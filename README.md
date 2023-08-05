@@ -7,7 +7,7 @@ All icons used in this project are from Google fonts.
 
 ## Database Schemas
 <ul>
-    <li><strong>Users</strong>: username, email, phoneNum?, birthday?, bio?, gender?, follower-count=0, following-count=0</li>
+    <li><strong>Users</strong>: username, email, password, phoneNum?, birthday, bio?, gender?, follower-count=0, following-count=0, profile_picture</li>
     <li><strong>Followings</strong>: followed-username, follower-username</li>
     <li><strong>Posts</strong>: username, location?, date-posted, content, description?, like_count=0, comment_count=0</li>
     <li><strong>Likes</strong>: post-id, liker-username</li>

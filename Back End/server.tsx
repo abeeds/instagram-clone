@@ -4,7 +4,12 @@ const app = express();
 const port = 3000;
 const mongoDB = "mongodb://localhost:27017/myDB";
 
-// I am using a local database 
+// TODO
+// users
+//  check if they are at least 13 on sign up
+//  hash password on sign up
+
+//  Database Connection
 // useNewUrlParser and useUnifiedTopology are true to avoid deprecation warnings
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
     // On Resolved
@@ -16,3 +21,4 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((err: any) => {
         console.error("Error connecting to database:", err);
     });
+
