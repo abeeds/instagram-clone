@@ -9,7 +9,7 @@ All icons used in this project are from Google fonts.
 <ul>
     <li><strong>Users</strong>: username, email, password, phoneNum?, birthday, bio?, gender?, follower-count=0, following-count=0, profile_picture</li>
     <li><strong>Followings</strong>: followed-username, follower-username</li>
-    <li><strong>Posts</strong>: username, location?, date-posted, content, description?, like_count=0, comment_count=0</li>
+    <li><strong>Posts</strong>: user-id, location?, time_stamp, content, description?, like_count=0, comment_count=0</li>
     <li><strong>Likes</strong>: post-id, liker-username</li>
     <li><strong>Comments</strong>: post-id, username, date-commented, comment</li>
     <li><strong>Stories</strong>: username, date-posted, story-content</li>
