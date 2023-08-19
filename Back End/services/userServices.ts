@@ -23,8 +23,6 @@ function createNewUser(uName:String, userEmail:String,
         newUser.save((err: any, savedUser: typeof User) => {
             if (err) {
                 console.error('An error occurred while creating this account.');
-            } else {
-                console.log('Account created successfully.');
             }
         })
 }
