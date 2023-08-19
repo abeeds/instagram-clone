@@ -1,5 +1,3 @@
-const User = require('../models/user');
-
 // used at the end, once all fields have been validated
 function createNewUser(uName:String, userEmail:String, 
     userPassword:String, userBirthday:Date, userAvatar:String="", userPhoneNum:Number,

@@ -4,6 +4,8 @@ const app = express();
 const port = 3000;
 const mongoDB = "mongodb://0.0.0.0:27017/Instagraham";
 
+
+
 // TODO
 // users
 //  check if they are at least 13 on sign up
@@ -14,7 +16,7 @@ const mongoDB = "mongodb://0.0.0.0:27017/Instagraham";
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
     // On Resolved
     .then(() => {
-        app.listen(port);
+        console.log("Connected to the database.")
     })
     
     // Error Handling
@@ -22,8 +24,13 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
         console.error("Error connecting to database:", err);
     });
 
+
+    
 // Root Route
     app.get('/', function (req: any, res: any) {
         res.send("hi")
       });
 
+// testing
+
+app.listen(port);
