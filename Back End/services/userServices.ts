@@ -1,4 +1,4 @@
-import { User }  from '../models/user';
+const User = require('../models/user');
 
 // used at the end, once all fields have been validated
 function createNewUser(uName:String, userEmail:String, 
@@ -26,3 +26,7 @@ function createNewUser(uName:String, userEmail:String,
             }
         })
 }
+
+module.exports = {
+    createNewUser
+};

@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const port = 3000;
-const mongoDB = "mongodb://localhost:27017/Instagraham";
+const mongoDB = "mongodb://0.0.0.0:27017/Instagraham";
 
 // TODO
 // users
@@ -21,4 +21,9 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((err: any) => {
         console.error("Error connecting to database:", err);
     });
+
+// Root Route
+    app.get('/', function (req: any, res: any) {
+        res.send("hi")
+      });
 
