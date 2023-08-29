@@ -106,26 +106,39 @@ const PostImage = (props: PostProps) => {
 }
 
 function Home() {
-    return (
-        <div className="body">
-            <NavBar/>
-            <div className='home'>
-                <div className='Stories'>
+    return ( <>
+            <div className="body">
+                <NavBar/>
+                <div className='home'>
+                    <div className='Stories'>
 
-                </div>
-                <div className='posts'>
-                    <PostImage 
-                        username={'Joey'} 
-                        image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
-                        description=''
-                        liked_by='Steve'
-                        like_count={2}
-                        comment_count={13}
-                        location='New York'
-                    />
+                    </div>
+                    <div className='posts'>
+                        
+                        <PostImage 
+                            username={'Joey'} 
+                            image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
+                            description=''
+                            liked_by='Steve'
+                            like_count={2}
+                            comment_count={13}
+                            location='New York'
+                        />
+
+                        <PostImage 
+                            username={'Joey'} 
+                            image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
+                            description=''
+                            liked_by='Steve'
+                            like_count={2}
+                            comment_count={13}
+                            location='New York'
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
+            
+        </>
     );
 }
 
