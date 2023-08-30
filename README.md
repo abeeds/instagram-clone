@@ -20,6 +20,7 @@ My plan is to have all the counts be updated upon insert/delete to avoid having 
 ## Current status
 The navbar displays as intended <br>
 Posts are mostly done on the front end. All thats left is to make the icons change when liked/saved<br>
+<img src="https://i.imgur.com/4GM2zgA.png">
 
 ## TODO
 Installed express and some of the backend components<br>

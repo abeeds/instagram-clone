@@ -126,12 +126,12 @@ function Home() {
                         />
 
                         <PostImage 
-                            username={'Joey'} 
+                            username={'Albert'} 
                             image={"https://img.freepik.com/free-photo/vertical-shot-adorable-dog-papillon-breed-dog_181624-30689.jpg?w=2000"}
                             description=''
-                            liked_by='Steve'
-                            like_count={2}
-                            comment_count={13}
+                            liked_by='Watson'
+                            like_count={1}
+                            comment_count={4}
                             location='New York'
                         />
                     </div>
