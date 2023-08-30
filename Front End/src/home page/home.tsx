@@ -117,7 +117,7 @@ function Home() {
                         
                         <PostImage 
                             username={'Joey'} 
-                            image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
+                            image={"https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"}
                             description=''
                             liked_by='Steve'
                             like_count={2}
@@ -127,7 +127,7 @@ function Home() {
 
                         <PostImage 
                             username={'Joey'} 
-                            image={"https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwZG9nfGVufDB8fDB8fHww&w=1000&q=80"}
+                            image={"https://img.freepik.com/free-photo/vertical-shot-adorable-dog-papillon-breed-dog_181624-30689.jpg?w=2000"}
                             description=''
                             liked_by='Steve'
                             like_count={2}
