@@ -1,4 +1,3 @@
-import React from 'react';
 import "./navbar.css";
 import {ReactComponent as HomeIcon} from './images/home.svg';
 import {ReactComponent as SearchIcon} from './images/search.svg';

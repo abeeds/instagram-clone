@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './home page/home.tsx';
-import Explore from './explore page/explore.tsx';
 import LogInBox from './login page/login.tsx';
 
 
@@ -17,9 +16,6 @@ function App() {
 
       {/* Log-In Page */}
       <Route path="/login" element={ <LogInBox/> }/>
-
-      {/* Explore Path */}
-      <Route path="/explore/" element={ <Explore/> }/>
 
       {/* 
         Profile Route 
