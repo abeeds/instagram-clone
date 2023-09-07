@@ -1,8 +1,8 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './home page/home.tsx';
 import Explore from './explore page/explore.tsx';
+import LogInBox from './login page/login.tsx';
 
 
 // TODO: instagram's root page is also the sign-in, need to check if user is logged in
@@ -14,6 +14,9 @@ function App() {
     
       {/* Home Path */}
       <Route path="/" element={ <Home/> }/>
+
+      {/* Log-In Page */}
+      <Route path="/login" element={ <LogInBox/> }/>
 
       {/* Explore Path */}
       <Route path="/explore/" element={ <Explore/> }/>
