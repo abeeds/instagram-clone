@@ -1,6 +1,4 @@
 .LogInBox {
-    border: 3px blue dotted;
-    height: 400px;
     width: 300px;
     margin: auto;
     margin-top: 7%;
@@ -8,15 +6,30 @@
     flex-direction: column;
 }
 
+
 #LogInText {
     color: white;
     font-family: 'Poiret One';
     font-size: 50px;
-    margin: auto;
+    margin: 30% auto 10px;
 }
 
-#LogInUsername, #LogInPassword {
+.LogInFields {
     font-family:"Calibri", sans-serif;
     font-size: 18px;
+    margin-top: 10px;
+    margin: 10px auto 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+input {
+    background: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: black;
+    font-weight: 500;
     margin: auto;
 }
